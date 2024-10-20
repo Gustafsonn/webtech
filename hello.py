@@ -3,4 +3,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-	return 'Hello napier'
+	print (request.method, request.path, request.form)
+	return "hello napier"
